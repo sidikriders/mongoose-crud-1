@@ -2,10 +2,7 @@ const mongoose = require('mongoose');
 const Schema = require('mongoose').Schema;
 
 let transSchema = new Schema({
-  memberID: {
-    type: Schema.Types.ObjectId,
-    ref: "Customer"
-  },
+  memberID: String,
   days: Number,
   out_date: Date,
   due_date: Date,
